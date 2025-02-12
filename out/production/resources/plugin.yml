@@ -1,0 +1,17 @@
+name: ddos_guard
+version: '1.0-SNAPSHOT'
+main: org.ip3e.ddos_guard.Main
+api-version: '1.20'
+prefix: DDoSGuard
+load: STARTUP
+authors: [ IP3E ]
+description: the plugin of ddos guard
+
+commands:
+  dg:
+    description: Main command for DDoSGuard plugin.
+    usage: "/dg <help|reload|info>"
+permissions:
+  ddosguard.command:
+    description: Allows use of the /dg command.
+    default: op
